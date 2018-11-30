@@ -6,11 +6,7 @@
 
 // ここにisOddNumber関数を作る
 function isOddNumber(num) {
-    if(num % 2 !== 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return num % 2 === 1;
 }
 
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
@@ -49,11 +45,12 @@ console.log("14を入力したらfalseが変えるべき: " + isOddNumber(14));
 
 // 3. 【チャレンジ問題】再帰関数を使ったやり方
 function factorial(num) {
-    if(num !== 0) {
+    if (num > 0) {
         return num * factorial(num-1);
     } else {
+        // 0以下の場合は常に1を返して終了する
         return 1;
-    } 
+    }
 }
 
 // ここにconsole.logを使って「4」「5」を引数に渡したときの結果値を出力する

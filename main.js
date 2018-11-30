@@ -68,7 +68,7 @@ console.log("5を入力したら120が変えるべき: " + factorial(5));
 //   - 「先頭1文字を大文字にするやり方」の参考記事: https://qiita.com/ichironagata/items/091f8cd629b82b0dcbf8
 
 // ここにconvertFirstCharacterToUpperCase関数を作る
-function convertFirstCharacterToUpperCase(str) {
+const convertFirstCharacterToUpperCase = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
